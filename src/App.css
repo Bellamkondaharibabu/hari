@@ -1,0 +1,124 @@
+
+body{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: rgb(220, 230, 230); */
+   /* background-image: url(/public/assets/hariphoto.jpg ); */
+
+ 
+   
+}
+
+
+
+.containar {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  
+}
+
+.sub-containar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+   
+}
+
+
+
+.sub-containar h4 {
+    color: #0d6bca;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.sub-containar h6{
+    color: #7e1b10;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.sub-containar form {
+    margin-top: 20px;
+}
+
+.sub-containar label {
+    color: #0f28e0;
+}
+
+.sub-containar input[type="email"],
+.sub-containar input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c9e52c;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.sub-containar input[type="email"]:focus,
+.sub-containar input[type="password"]:focus {
+    border-color: #24e413;
+    
+}
+
+.containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-containar {
+    width: 450px;
+    padding: 30px;
+    margin-top: 80px;
+    border: 2px solid aqua;
+}
+
+.sub-containar button{
+   width: 150px;
+  display: flex;
+  position: sticky;
+  left: 60px;
+  align-items: center;
+  justify-content: center;
+   height: 40px;
+   margin-left: 116px;
+   font-size: 20px;
+   border-radius: 5px;
+   color: red;
+   background-color: rgb(18, 30, 119);
+}
+
+
+.sub-containar p{
+    color: #3f0ce7;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+  
+  .password{
+    display: flex;
+    position: absolute;
+    margin-left: 330px;
+    top: 326px;
+    padding: 10px;
+    background-color: aquamarine;
+    border: 2px,solid green;
+    color: #e42b13;
+  }
+
+  
