@@ -113,12 +113,24 @@ body{
   .password{
     display: flex;
     position: absolute;
-    margin-left: 330px;
-    top: 326px;
-    padding: 10px;
+    margin-left: 328px;
+    top: 327px;
+    padding: 9px;
     background-color: aquamarine;
     border: 2px,solid green;
     color: #e42b13;
+    border-radius: 5px;
   }
+ 
+
+  .password-input {
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c9e52c;
+    box-sizing: border-box;
+  }
+
 
   

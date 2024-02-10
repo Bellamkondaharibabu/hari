@@ -2,12 +2,6 @@ import React, { useState } from 'react'
 import "./App.css"
 
 
-
-
-
-
-
-
 const App = () => {
   const [data, setData] = useState({
     email: "",
@@ -15,27 +9,21 @@ const App = () => {
   });
 
   const [error, setError] = useState('');
-
+  const [showPassword, setShowPassword] = useState(true);
   const { email, password } = data
   const updateEmail = (e) => {
     setData({ ...data, [e.target.name]: e.target.value })
   }
-  // const regExpSpecialChars = /[!@#$%^&*(),.?":{}|<>]/;
-// const[form ,setForm]=useState("")
+ 
 
+const togglePasswordVisibility = () => {
+  setShowPassword(!showPassword);
+}
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-//     const emailformat = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" ;
 
-// if (!emailformat.test(form))
-// {
-//   setForm("email should containas @and.com so plese try to enter correct")
-// }
-// else {
-  
-// }
 
 
 
@@ -73,7 +61,8 @@ const App = () => {
 
           <label htmlFor='password'>password</label><br></br>
           {/* <span style={{ color: "red" }}>{error}</span> */}
-          <input type="password" placeholder='password' name='password' value={password} onChange={updateEmail} /><span className='password'>show</span>
+          <input type={showPassword ? 'password' : 'text'}   className="password-input"placeholder='password' name='password' value={password} onChange={updateEmail} />
+          <span className='password' onClick={togglePasswordVisibility}>{showPassword ? 'Hide' : 'Show'}</span>
 
           <br></br>
 
